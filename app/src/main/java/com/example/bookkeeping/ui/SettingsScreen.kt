@@ -38,6 +38,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalResources
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -101,11 +102,18 @@ internal fun SettingsScreen(
             }
         }
         item {
-            SettingsRow(Icons.Default.AutoAwesome, stringResource(R.string.settings_auto), stringResource(R.string.automation_desc), onAutomation)
+            SettingsRow(Icons.Default.AutoAwesome, stringResource(R.string.settings_auto), stringResource(R.string.automation_desc)) {
+                onAutomation()
+            }
             SettingsRow(Icons.Default.Notifications, stringResource(R.string.settings_notifications), stringResource(R.string.notification_permission_desc)) {
                 context.startActivity(Intent(Settings.ACTION_NOTIFICATION_LISTENER_SETTINGS))
             }
-            SettingsRow(Icons.AutoMirrored.Filled.ReceiptLong, stringResource(R.string.settings_categories), stringResource(R.string.category_management_tip), onCategories)
+            SettingsRow(
+                Icons.AutoMirrored.Filled.ReceiptLong,
+                stringResource(R.string.settings_categories),
+                stringResource(R.string.category_management_tip),
+                modifier = Modifier.testTag("action_categories")
+            ) { onCategories() }
             SettingsRow(Icons.Default.UploadFile, stringResource(R.string.settings_import), stringResource(R.string.import_support)) {
                 importLauncher.launch(arrayOf("text/*", "text/csv", "application/vnd.ms-excel", "application/octet-stream"))
             }

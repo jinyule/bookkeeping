@@ -76,9 +76,15 @@ internal fun CardBlock(content: @Composable ColumnScope.() -> Unit) {
 }
 
 @Composable
-internal fun SettingsRow(icon: ImageVector, title: String, desc: String, onClick: () -> Unit) {
+internal fun SettingsRow(
+    icon: ImageVector,
+    title: String,
+    desc: String,
+    modifier: Modifier = Modifier,
+    onClick: () -> Unit
+) {
     Card(
-        Modifier
+        modifier
             .fillMaxWidth()
             .padding(horizontal = 20.dp, vertical = 4.dp)
             .clickable(onClick = onClick),
