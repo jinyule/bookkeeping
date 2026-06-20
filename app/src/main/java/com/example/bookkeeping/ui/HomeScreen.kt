@@ -38,6 +38,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
@@ -89,7 +90,9 @@ internal fun HomeScreen(
                     title = stringResource(R.string.tab_bookkeeping),
                     actions = {
                         TextButton(onClick = onReports) { Text(stringResource(R.string.home_daily_report)) }
-                        IconButton(onClick = onSearch) { Icon(Icons.Default.Search, contentDescription = stringResource(R.string.action_search)) }
+                        IconButton(onClick = onSearch, modifier = Modifier.testTag("action_search")) {
+                            Icon(Icons.Default.Search, contentDescription = stringResource(R.string.action_search))
+                        }
                         IconButton(onClick = onAdd) { Icon(Icons.Default.Edit, contentDescription = stringResource(R.string.action_edit)) }
                     }
                 )
