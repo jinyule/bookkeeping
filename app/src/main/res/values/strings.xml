@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">简记账</string>
+    <string name="notification_listener_label">简记账通知识别</string>
+    <string name="accessibility_service_label">简记账无障碍识别</string>
+    <string name="accessibility_service_description">读取支付结果和账单文本，用于本地自动记账，不会执行付款或转账操作。</string>
+
+    <string name="tab_bookkeeping">记账</string>
+    <string name="tab_reports">报表</string>
+    <string name="tab_add">记一笔</string>
+    <string name="tab_automation">自动</string>
+    <string name="tab_settings">设置</string>
+
+    <string name="action_back">返回</string>
+    <string name="action_search">搜索</string>
+    <string name="action_edit">编辑</string>
+    <string name="action_save">保存</string>
+    <string name="action_cancel">取消</string>
+    <string name="action_delete">删除</string>
+    <string name="action_open">打开</string>
+    <string name="action_close">关闭</string>
+    <string name="action_enable">去开启</string>
+    <string name="action_post_test">发送测试通知</string>
+    <string name="action_parse_fixture">识别示例文本</string>
+    <string name="currency_symbol">¥</string>
+    <string name="keyboard_delete">删除</string>
+
+    <string name="home_daily_report">记账日报</string>
+    <string name="today_expense">今日支出(元)</string>
+    <string name="month_expense">本月支出(元)</string>
+    <string name="month_income">本月收入(元)</string>
+    <string name="budget_prompt">设置预算，合理规划支出</string>
+    <string name="empty_bills_title">还没有账单</string>
+    <string name="empty_bills_desc">手动记一笔，或开启通知识别和无障碍识别后自动生成账单。</string>
+    <string name="day_total_format">支 %1$s    收 %2$s</string>
+    <string name="source_auto_badge">%1$s自动记账</string>
+    <string name="review_badge">待确认</string>
+
+    <string name="direction_expense">支出</string>
+    <string name="direction_income">收入</string>
+    <string name="field_amount">金额</string>
+    <string name="field_time">时间</string>
+    <string name="field_category">分类</string>
+    <string name="field_merchant">商户/对象</string>
+    <string name="field_account">账户/来源</string>
+    <string name="field_note">备注</string>
+    <string name="field_source">来源</string>
+    <string name="remark_hint">点击填写备注</string>
+    <string name="merchant_hint">填写商户或收款方</string>
+    <string name="account_hint">现金、银行卡、微信等</string>
+    <string name="amount_invalid">金额格式不正确</string>
+    <string name="delete_bill_title">删除账单？</string>
+    <string name="delete_bill_desc">删除后无法恢复。</string>
+    <string name="bill_detail">账单详情</string>
+
+    <string name="report_title">收支报表</string>
+    <string name="report_week">周报</string>
+    <string name="report_month">月报</string>
+    <string name="report_year">年报</string>
+    <string name="report_custom">自定义</string>
+    <string name="report_expense_trend">支出趋势</string>
+    <string name="report_category_breakdown">支出分类构成</string>
+    <string name="report_average_expense">日均支出(元)</string>
+    <string name="report_balance">收支结余(元)</string>
+    <string name="report_no_data">暂无可统计账单</string>
+
+    <string name="automation_title">自动记账</string>
+    <string name="automation_status_on">自动记账已开启</string>
+    <string name="automation_status_paused">自动记账已暂停</string>
+    <string name="automation_desc">本地读取并解析支付通知和可见账单文本，提取金额、时间、商户等信息生成账单。数据只保存在本机。</string>
+    <string name="notification_permission_title">通知识别</string>
+    <string name="notification_permission_desc">开启通知使用权后，可从微信支付、支付宝、云闪付、银行等支付通知中自动记账。</string>
+    <string name="accessibility_permission_title">无障碍识别</string>
+    <string name="accessibility_permission_desc">开启无障碍服务后，可识别安全可见的支付结果和账单文本，不会点击、付款或输入密码。</string>
+    <string name="source_title">来源</string>
+    <string name="source_wechat">微信支付</string>
+    <string name="source_alipay">支付宝</string>
+    <string name="source_unionpay">云闪付 / 银联</string>
+    <string name="source_vivo_wallet">钱包 / vivo Pay</string>
+    <string name="source_bank">银行/短信样式通知</string>
+    <string name="source_generic">通用支付通知</string>
+    <string name="source_import">账单导入</string>
+    <string name="source_desc_wechat">解析微信支付通知和可见账单文本并自动记录。</string>
+    <string name="source_desc_alipay">解析支付宝账单信息并自动记录。</string>
+    <string name="source_desc_unionpay">解析云闪付、银联和银行卡支付通知。</string>
+    <string name="source_desc_vivo_wallet">解析钱包支付及 vivo Pay 支付账单信息。</string>
+    <string name="source_desc_bank">通过通知文本识别银行入账、扣款和退款。</string>
+    <string name="source_desc_generic">识别常见支付、退款、转账通知。</string>
+    <string name="source_desc_import">从 CSV 或结构化文本导入微信、支付宝、银行账单。</string>
+    <string name="test_notification_sent">测试通知已发送，请确认通知识别服务是否生成账单。</string>
+    <string name="test_notification_blocked">请先允许通知权限后再发送测试通知。</string>
+    <string name="test_notification_title">微信支付</string>
+    <string name="test_notification_text">微信支付凭证：你已向示例咖啡支付¥36.00</string>
+    <string name="test_notification_big_text">微信支付凭证：你已向示例咖啡支付¥36.00，交易时间 2026/06/08 12:30</string>
+
+    <string name="settings_title">设置</string>
+    <string name="settings_auto">自动记账设置</string>
+    <string name="settings_notifications">记账通知</string>
+    <string name="settings_categories">记账分类管理</string>
+    <string name="settings_import">导入数据</string>
+    <string name="settings_language">语言</string>
+    <string name="settings_privacy">隐私与安全</string>
+    <string name="privacy_desc">不包含广告、云同步、贷款、营销或分析上传。原始识别文本只保存在本机。</string>
+    <string name="language_follow_system">跟随系统</string>
+    <string name="language_zh">简体中文</string>
+    <string name="language_en">English</string>
+
+    <string name="search_title">搜索</string>
+    <string name="search_hint">搜索商户、备注、分类、来源</string>
+    <string name="search_no_result">没有匹配账单</string>
+
+    <string name="category_management_title">记账分类管理</string>
+    <string name="category_management_tip">点击分类可选择，长按拖动排序将在后续版本开放。</string>
+    <string name="category_expense_management">支出管理</string>
+    <string name="category_income_management">收入管理</string>
+
+    <string name="import_title">导入数据</string>
+    <string name="import_support">支持 CSV 或结构化文本，单次建议 1MB 以内。每行至少包含时间、方向、金额、商户，可包含分类、账户、备注、来源。</string>
+    <string name="import_format">示例：2026/06/08 12:30,支出,36.00,微信支付,咖啡,餐饮,零钱</string>
+    <string name="import_success">已导入 %1$d 条，跳过 %2$d 条重复或无效记录。</string>
+    <string name="import_failed">导入失败：%1$s</string>
+
+    <string name="fixture_title">无障碍识别测试</string>
+    <string name="fixture_desc">这些示例文本用于验证解析器，不含真实财务数据。</string>
+    <string name="fixture_wechat_expense">微信支付凭证：你已向示例咖啡支付¥36.00</string>
+    <string name="fixture_wechat_income">微信支付收款到账88.00元，来自示例客户</string>
+    <string name="fixture_promo">微信支付优惠券到账，满20减5</string>
+    <string name="accessibility_fixture_created">示例识别完成，已忽略营销文本。</string>
+
+    <string name="category_food">餐饮</string>
+    <string name="category_shopping">购物</string>
+    <string name="category_subscription">AI订阅</string>
+    <string name="category_consumption">消费</string>
+    <string name="category_transfer">转账</string>
+    <string name="category_transport">交通</string>
+    <string name="category_housing">住房</string>
+    <string name="category_insurance">保险</string>
+    <string name="category_communication">通讯</string>
+    <string name="category_entertainment">娱乐</string>
+    <string name="category_medical">医疗</string>
+    <string name="category_education">教育</string>
+    <string name="category_red_packet">红包</string>
+    <string name="category_travel">旅行</string>
+    <string name="category_investment">投资</string>
+    <string name="category_other">其他</string>
+    <string name="category_salary">薪资</string>
+    <string name="category_finance">理财</string>
+    <string name="category_receipt">收款</string>
+    <string name="category_borrow_in">借入</string>
+    <string name="category_refund">退款</string>
+</resources>

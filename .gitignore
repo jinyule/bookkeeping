@@ -1,0 +1,13 @@
+.gradle/
+.kotlin/
+build/
+app/build/
+local.properties
+
+# Local validation captures can contain private merchants, amounts, notes, and account data.
+reference/
+
+*.iml
+.idea/
+captures/
+*.keystore

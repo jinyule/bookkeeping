@@ -1,0 +1,150 @@
+<resources>
+    <string name="app_name">Simple Ledger</string>
+    <string name="notification_listener_label">Simple Ledger notification recognition</string>
+    <string name="accessibility_service_label">Simple Ledger accessibility recognition</string>
+    <string name="accessibility_service_description">Reads payment result and bill text for local bookkeeping only. It never performs payments or transfers.</string>
+
+    <string name="tab_bookkeeping">Ledger</string>
+    <string name="tab_reports">Reports</string>
+    <string name="tab_add">Add</string>
+    <string name="tab_automation">Auto</string>
+    <string name="tab_settings">Settings</string>
+
+    <string name="action_back">Back</string>
+    <string name="action_search">Search</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_save">Save</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_open">Open</string>
+    <string name="action_close">Close</string>
+    <string name="action_enable">Enable</string>
+    <string name="action_post_test">Post test notification</string>
+    <string name="action_parse_fixture">Parse sample text</string>
+    <string name="currency_symbol">¥</string>
+    <string name="keyboard_delete">Delete</string>
+
+    <string name="home_daily_report">Daily report</string>
+    <string name="today_expense">Today expense</string>
+    <string name="month_expense">Month expense</string>
+    <string name="month_income">Month income</string>
+    <string name="budget_prompt">Set a budget to plan spending</string>
+    <string name="empty_bills_title">No bills yet</string>
+    <string name="empty_bills_desc">Add a bill manually, or enable notification and accessibility recognition to create bills automatically.</string>
+    <string name="day_total_format">Out %1$s    In %2$s</string>
+    <string name="source_auto_badge">%1$s auto</string>
+    <string name="review_badge">Review</string>
+
+    <string name="direction_expense">Expense</string>
+    <string name="direction_income">Income</string>
+    <string name="field_amount">Amount</string>
+    <string name="field_time">Time</string>
+    <string name="field_category">Category</string>
+    <string name="field_merchant">Merchant/payee</string>
+    <string name="field_account">Account/source</string>
+    <string name="field_note">Note</string>
+    <string name="field_source">Source</string>
+    <string name="remark_hint">Tap to add a note</string>
+    <string name="merchant_hint">Merchant or payee</string>
+    <string name="account_hint">Cash, bank card, WeChat, etc.</string>
+    <string name="amount_invalid">Invalid amount</string>
+    <string name="delete_bill_title">Delete bill?</string>
+    <string name="delete_bill_desc">This cannot be undone.</string>
+    <string name="bill_detail">Bill detail</string>
+
+    <string name="report_title">Reports</string>
+    <string name="report_week">Week</string>
+    <string name="report_month">Month</string>
+    <string name="report_year">Year</string>
+    <string name="report_custom">Custom</string>
+    <string name="report_expense_trend">Expense trend</string>
+    <string name="report_category_breakdown">Expense categories</string>
+    <string name="report_average_expense">Daily average</string>
+    <string name="report_balance">Balance</string>
+    <string name="report_no_data">No bills to summarize</string>
+
+    <string name="automation_title">Automatic bookkeeping</string>
+    <string name="automation_status_on">Automatic bookkeeping is on</string>
+    <string name="automation_status_paused">Automatic bookkeeping is paused</string>
+    <string name="automation_desc">Locally reads and parses payment notifications and visible bill text, then extracts amount, time, and merchant to create bills. Data stays on this device.</string>
+    <string name="notification_permission_title">Notification recognition</string>
+    <string name="notification_permission_desc">Enable notification access to auto-bookkeep from WeChat Pay, Alipay, UnionPay, bank, and other payment notifications.</string>
+    <string name="accessibility_permission_title">Accessibility recognition</string>
+    <string name="accessibility_permission_desc">Enable the accessibility service to recognize safe visible payment results and bill text. It never clicks, pays, or enters passwords.</string>
+    <string name="source_title">Sources</string>
+    <string name="source_wechat">WeChat Pay</string>
+    <string name="source_alipay">Alipay</string>
+    <string name="source_unionpay">Cloud QuickPass / UnionPay</string>
+    <string name="source_vivo_wallet">Wallet / vivo Pay</string>
+    <string name="source_bank">Bank/SMS-style notices</string>
+    <string name="source_generic">Generic payment notices</string>
+    <string name="source_import">Bill import</string>
+    <string name="source_desc_wechat">Parse WeChat Pay notifications and visible bill text.</string>
+    <string name="source_desc_alipay">Parse Alipay bill information.</string>
+    <string name="source_desc_unionpay">Parse Cloud QuickPass, UnionPay, and bank-card payment notices.</string>
+    <string name="source_desc_vivo_wallet">Parse wallet payment and vivo Pay bill information.</string>
+    <string name="source_desc_bank">Recognize bank credits, debits, and refunds from notification text.</string>
+    <string name="source_desc_generic">Recognize common payment, refund, and transfer notices.</string>
+    <string name="source_desc_import">Import WeChat, Alipay, and bank bills from CSV or structured text.</string>
+    <string name="test_notification_sent">Test notification posted. Check whether notification recognition created a bill.</string>
+    <string name="test_notification_blocked">Allow notification permission before posting a test notification.</string>
+    <string name="test_notification_title">WeChat Pay</string>
+    <string name="test_notification_text">WeChat Pay receipt: You paid CNY 36.00 to Sample Coffee</string>
+    <string name="test_notification_big_text">WeChat Pay receipt: You paid CNY 36.00 to Sample Coffee, transaction time 2026/06/08 12:30</string>
+
+    <string name="settings_title">Settings</string>
+    <string name="settings_auto">Automatic bookkeeping</string>
+    <string name="settings_notifications">Bookkeeping notifications</string>
+    <string name="settings_categories">Category management</string>
+    <string name="settings_import">Import data</string>
+    <string name="settings_language">Language</string>
+    <string name="settings_privacy">Privacy and safety</string>
+    <string name="privacy_desc">No ads, cloud sync, loans, marketing, or analytics upload. Raw recognition text stays on this device.</string>
+    <string name="language_follow_system">Follow system</string>
+    <string name="language_zh">Chinese</string>
+    <string name="language_en">English</string>
+
+    <string name="search_title">Search</string>
+    <string name="search_hint">Search merchant, note, category, source</string>
+    <string name="search_no_result">No matching bills</string>
+
+    <string name="category_management_title">Category management</string>
+    <string name="category_management_tip">Tap a category to select it. Drag sorting will be added later.</string>
+    <string name="category_expense_management">Expense categories</string>
+    <string name="category_income_management">Income categories</string>
+
+    <string name="import_title">Import data</string>
+    <string name="import_support">Supports CSV or structured text. Keep each import under about 1 MB. Each row should include time, direction, amount, and merchant, and may include category, account, note, and source.</string>
+    <string name="import_format">Example: 2026/06/08 12:30,Expense,36.00,WeChat Pay,Coffee,Food,Balance</string>
+    <string name="import_success">Imported: %1$d. Skipped duplicate or invalid rows: %2$d.</string>
+    <string name="import_failed">Import failed: %1$s</string>
+
+    <string name="fixture_title">Accessibility recognition test</string>
+    <string name="fixture_desc">These sample texts verify parsing without real financial data.</string>
+    <string name="fixture_wechat_expense">WeChat Pay receipt: You paid CNY 36.00 to Sample Coffee</string>
+    <string name="fixture_wechat_income">WeChat Pay received CNY 88.00 from Sample Client</string>
+    <string name="fixture_promo">WeChat Pay coupon received, save 5 on 20</string>
+    <string name="accessibility_fixture_created">Sample recognition finished. Marketing text was ignored.</string>
+
+    <string name="category_food">Food</string>
+    <string name="category_shopping">Shopping</string>
+    <string name="category_subscription">AI subscription</string>
+    <string name="category_consumption">Spending</string>
+    <string name="category_transfer">Transfer</string>
+    <string name="category_transport">Transport</string>
+    <string name="category_housing">Housing</string>
+    <string name="category_insurance">Insurance</string>
+    <string name="category_communication">Communication</string>
+    <string name="category_entertainment">Entertainment</string>
+    <string name="category_medical">Medical</string>
+    <string name="category_education">Education</string>
+    <string name="category_red_packet">Red packet</string>
+    <string name="category_travel">Travel</string>
+    <string name="category_investment">Investment</string>
+    <string name="category_other">Other</string>
+    <string name="category_salary">Salary</string>
+    <string name="category_finance">Finance</string>
+    <string name="category_receipt">Receipt</string>
+    <string name="category_borrow_in">Borrowed</string>
+    <string name="category_refund">Refund</string>
+</resources>
