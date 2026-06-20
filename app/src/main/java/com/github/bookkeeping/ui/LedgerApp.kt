@@ -10,10 +10,8 @@ import androidx.compose.foundation.layout.WindowInsets
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
-import androidx.compose.foundation.layout.mandatorySystemGestures
 import androidx.compose.foundation.layout.navigationBars
 import androidx.compose.foundation.layout.padding
-import androidx.compose.foundation.layout.systemGestures
 import androidx.compose.foundation.layout.tappableElement
 import androidx.compose.foundation.systemGestureExclusion
 import androidx.compose.material.icons.Icons
@@ -352,13 +350,13 @@ private fun selectedTopLevelRoute(route: String): String = when (route) {
 
 @Composable
 internal fun bottomInteractivePadding(): Dp {
+    // 仅保留系统导航栏安全区高度，避免把 systemGestures/mandatorySystemGestures
+    // 这类手势预留区计入，导致底部 Tab 与手机底部留白过大。
+    // 手势抢点击的问题已由 systemGestureExclusion() 修饰符处理，无需靠撑大 padding 抬升。
     val density = LocalDensity.current
     val bottomInset = maxOf(
         WindowInsets.navigationBars.getBottom(density),
-        WindowInsets.tappableElement.getBottom(density),
-        WindowInsets.systemGestures.getBottom(density),
-        WindowInsets.mandatorySystemGestures.getBottom(density)
+        WindowInsets.tappableElement.getBottom(density)
     )
-    val reportedPadding = with(density) { bottomInset.toDp() }
-    return if (reportedPadding > 0.dp) reportedPadding else 80.dp
+    return with(density) { bottomInset.toDp() }
 }
