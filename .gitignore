@@ -7,6 +7,11 @@ local.properties
 # Local validation captures can contain private merchants, amounts, notes, and account data.
 reference/
 
+# Local import artifacts can contain private bookkeeping data.
+*.xlsx
+*.import.csv
+bookkeeping.db.before-import
+
 *.iml
 .idea/
 captures/

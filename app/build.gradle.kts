@@ -5,11 +5,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.bookkeeping"
+    namespace = "com.github.bookkeeping"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.bookkeeping"
+        applicationId = "com.github.bookkeeping"
         minSdk = 26
         targetSdk = 36
         versionCode = 5

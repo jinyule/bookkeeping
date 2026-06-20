@@ -18,7 +18,7 @@ Definition of done:
 
 - A debug APK builds successfully, installs on the connected vivo device, and launches.
 - The app is implemented in Kotlin + Jetpack Compose unless an existing Android project in this repo clearly requires a narrower compatible choice.
-- If this repo has no Android source project, scaffold a native Android Gradle project here using package `com.example.bookkeeping`.
+- If this repo has no Android source project, scaffold a native Android Gradle project here using package `com.github.bookkeeping`.
 - The app includes real local bookkeeping features, real automatic bookkeeping services, and a tested import fallback.
 - The app supports Simplified Chinese (`zh-CN`) and English (`en`) from v1. Simplified Chinese is the default/fallback language.
 - The app has a neutral name/icon and does not use vivo trademarks, vivo logos, vivo official identity, or misleading brand language.
@@ -33,7 +33,7 @@ Known environment facts to verify before working:
 - vivo Wallet package: `com.vivo.wallet`
 - vivo Wallet launch activity: `com.vivo.wallet/.StartPageActivity`
 - vivo Wallet version observed: `5.3.7.0`
-- There may already be an installed test app package `com.example.bookkeeping`; replace/update it only as part of installing this project's APK.
+- There may already be an installed test app package `com.github.bookkeeping`; replace/update it only as part of installing this project's APK.
 
 Work in this order.
 
@@ -185,7 +185,7 @@ adb devices -l
 adb shell wm size
 adb shell wm density
 adb shell am start -n com.vivo.wallet/.StartPageActivity
-adb shell am start -n com.example.bookkeeping/.MainActivity
+adb shell am start -n com.github.bookkeeping/.MainActivity
 adb exec-out screencap -p > reference.png
 adb shell settings get secure enabled_notification_listeners
 adb shell settings get secure enabled_accessibility_services
