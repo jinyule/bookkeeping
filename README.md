@@ -3,7 +3,7 @@
 简记账是一个本地优先的 Android 记账 App，界面和核心流程参考 vivo 钱包记账，保留手动记账、报表、搜索、导入和自动记账能力，排除营销、广告、贷款、理财推荐等非记账功能。
 
 当前版本：`0.1.4`
-应用包名：`com.example.bookkeeping`
+应用包名：`com.github.bookkeeping`
 
 ## 功能
 
@@ -53,13 +53,13 @@
 安装 Debug APK：
 
 ```bash
-adb install -r app/build/outputs/apk/debug/app-debug.apk
+adb install -r -t -g app/build/outputs/apk/debug/app-debug.apk
 ```
 
 运行 instrumentation：
 
 ```bash
-adb shell am instrument -w -r com.example.bookkeeping.test/androidx.test.runner.AndroidJUnitRunner
+adb shell am instrument -w -r com.github.bookkeeping.test/androidx.test.runner.AndroidJUnitRunner
 ```
 
 ## 权限开启
@@ -80,7 +80,7 @@ adb shell am instrument -w -r com.example.bookkeeping.test/androidx.test.runner.
 ## 目录
 
 ```text
-app/src/main/java/com/example/bookkeeping/
+app/src/main/java/com/github/bookkeeping/
   data/          Room 数据库、DAO 和实体
   recognition/   通知、无障碍和导入文本解析
   service/       通知监听和无障碍服务
